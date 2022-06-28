@@ -34,6 +34,7 @@ namespace HomeWork7
                         int[,] matrixSecond = CreateRandomMatrixInteger();
                         double sum = 0;
                         PrintMatrixInteger(matrixSecond);
+                        Console.Write("Среднее арифметическое каждого столбца: ");
                         for (int j = 0; j < matrixSecond.GetLength(0); j++)
                         {
                             for (int i = 0; i < matrixSecond.GetLength(1); i++)
@@ -43,6 +44,7 @@ namespace HomeWork7
                             Console.Write("{0:0.0} ", sum / matrixSecond.GetLength(1));
                             sum = 0;
                         }
+                        Console.WriteLine();
                         break;
                 }
 
