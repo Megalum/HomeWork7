@@ -35,13 +35,13 @@ namespace HomeWork7
                         double sum = 0;
                         PrintMatrixInteger(matrixSecond);
                         Console.Write("Среднее арифметическое каждого столбца: ");
-                        for (int j = 0; j < matrixSecond.GetLength(0); j++)
+                        for (int j = 0; j < matrixSecond.GetLength(1); j++)
                         {
-                            for (int i = 0; i < matrixSecond.GetLength(1); i++)
+                            for (int i = 0; i < matrixSecond.GetLength(0); i++)
                             {
                                 sum += matrixSecond[i, j];
                             }
-                            Console.Write("{0:0.0} ", sum / matrixSecond.GetLength(1));
+                            Console.Write("{0:0.0} ", sum / matrixSecond.GetLength(0));
                             sum = 0;
                         }
                         Console.WriteLine();
